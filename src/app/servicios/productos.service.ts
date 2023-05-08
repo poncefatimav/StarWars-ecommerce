@@ -72,11 +72,6 @@ export class ProductosService {
   }
 
   getTotalPrice() {
-    // let totalPrice = 0;
-    // for (const character of this.character) {
-    //   totalPrice = totalPrice + character.mass * character.quantity;
-    // }
-    // return totalPrice;
     const totalPrice = this.character.reduce((a, b) => a + b.totalPrice, 0);
     this.totalCarrito$.next(totalPrice);
     console.log(totalPrice);
@@ -84,10 +79,6 @@ export class ProductosService {
   }
 
   getTotalProdu(character: any) {
-    // for (const character of this.character) {
-    //   priceUnitary = character.mass;
-    // }
-    // return priceUnitary * quantity;
     character.totalPrice = character.quantity * Number(character.mass);
     this.getTotalPrice();
   }

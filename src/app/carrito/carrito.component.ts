@@ -17,13 +17,13 @@ export class CarritoComponent {
   constructor(public productosService: ProductosService) {}
   ngOnInit(): void {
     this.listaProductos = this.productosService.character;
-    //this.updateeQuantity = this.productosService.updateQuantity(character, quantity);
+
     console.log(this.listaProductos);
     this.productosService.totalCarrito$.subscribe((data) => {
       console.log(data);
       this.totalPrice = data;
     });
-    // this.totalprodu = this.productosService.getTotalProdu();
+
     this.precioTotalCarrito();
   }
   calcularPrecio(quantity: any, character: any) {

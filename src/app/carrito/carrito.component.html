@@ -19,14 +19,7 @@
       <tr *ngFor="let character of listaProductos">
         <td class="tabla">{{ character.name }}</td>
         <td class="tabla">{{ character.species || "Human" }}</td>
-        <td class="tabla">
-          <!-- <select>
-            <option value="USD$">USD$ {{ character.mass }}</option>
-            <option value="€">€ {{ character.mass * 0.9 }}</option>
-            <option value="AR$">AR$ {{ character.mass * 460 }}</option>
-          </select> -->
-          USD$ {{ character.mass }}
-        </td>
+        <td class="tabla">USD$ {{ character.mass }}</td>
         <td class="tabla">
           <input
             class="input"
@@ -41,12 +34,6 @@
         </td>
       </tr>
     </tbody>
-    <!-- <button
-      (click)="updateQuantity(character.quantity)"
-      class="botonActualizar"
-    >
-      Actualizar cantidades
-    </button> -->
 
     <h2>Elija con que moneda pagar:</h2>
     <select class="select">
