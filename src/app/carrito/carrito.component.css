@@ -1,0 +1,110 @@
+.all {
+  background-image: url("https://wallpaperaccess.com/full/640759.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+  margin: 0%;
+  color: white;
+  display: flex;
+}
+
+.boton {
+  margin-left: 0%;
+  min-width: 130px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  padding: 3px 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  background: rgba(197, 185, 185, 0.808);
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.lista {
+  background-color: rgba(169, 165, 170, 0.308);
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 0px 45px 45px 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.botoncomprar {
+  margin-left: 100%;
+  min-width: 130px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  padding: 3px 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  background: rgba(197, 185, 185, 0.808);
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.tabla {
+  position: relative;
+}
+
+.select {
+  position: center;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  overflow: hidden;
+  background-color: rgba(46, 43, 43, 0.349);
+  justify-content: center;
+  margin-bottom: 3px;
+  color: white;
+}
+
+.botonActualizar {
+  margin-left: 30%;
+  min-width: 130px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  padding: 3px 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: rgba(197, 185, 185, 0.808);
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.input {
+  border-radius: 10px;
+  padding: 8px;
+  background-color: rgba(44, 42, 42, 0.603);
+  border-color: rgba(0, 140, 255, 0.66);
+  border: 2px;
+  margin-bottom: 10px;
+  margin-left: 11px;
+  color: white;
+}

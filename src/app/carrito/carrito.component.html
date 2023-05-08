@@ -1,0 +1,59 @@
+<div class="all">
+  <table>
+    <thead>
+      <div>
+        <button class="boton" routerLink="/">Volver a los productos</button>
+      </div>
+      <div class="title">
+        <h1>Vista a tu carrito</h1>
+      </div>
+      <tr>
+        <th class="tabla">Nombre</th>
+        <th class="tabla">Categoría</th>
+        <th class="tabla">Precio unidad</th>
+        <th class="tabla">Cantidad</th>
+        <th class="tabla">Precio total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of listaProductos">
+        <td class="tabla">{{ character.name }}</td>
+        <td class="tabla">{{ character.species || "Human" }}</td>
+        <td class="tabla">
+          <!-- <select>
+            <option value="USD$">USD$ {{ character.mass }}</option>
+            <option value="€">€ {{ character.mass * 0.9 }}</option>
+            <option value="AR$">AR$ {{ character.mass * 460 }}</option>
+          </select> -->
+          USD$ {{ character.mass }}
+        </td>
+        <td class="tabla">
+          <input
+            class="input"
+            type="number"
+            min="1"
+            (change)="calcularPrecio($event, character)"
+            value="1"
+          />
+        </td>
+        <td class="tabla">
+          <span>USD$ {{ character.totalPrice || 0 }}</span>
+        </td>
+      </tr>
+    </tbody>
+    <!-- <button
+      (click)="updateQuantity(character.quantity)"
+      class="botonActualizar"
+    >
+      Actualizar cantidades
+    </button> -->
+
+    <h2>Elija con que moneda pagar:</h2>
+    <select class="select">
+      <option value="USD$">USD$ {{ totalPrice }}</option>
+      <option value="€">€ {{ totalPrice * 0.9 }}</option>
+      <option value="AR$">AR$ {{ totalPrice * 226 }}</option>
+    </select>
+    <button class="botoncomprar">Comprar!</button>
+  </table>
+</div>
